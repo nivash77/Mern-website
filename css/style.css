@@ -4,9 +4,112 @@ title{
 *{
     margin:0;
     padding: 0;
+    margin-bottom: 3px;
 }
 body{
     height: 100vh;
-    width: 100vw;
-    background-color: rgb(222, 233, 241);
+    /* width: 100vw; */
+    background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
+.section1{
+    width: 70%;
+     height: 12rem;
+     background: #659999;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 80px;
+     
+    }
+    .fixed{
+        position: fixed;
+    }
+    .profile-img{
+        display:flex;
+        height: 8rem;
+        width: auto;
+        margin-left: 2px;
+        
+    }
+    img{
+        border-radius: 50%;
+    }
+    .profile-data{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section2{
+    width: 70%;
+    height: 12rem;   
+    justify-content: center;
+}
+.objective{
+    color: rgb(145, 159, 154);
+    text-align: left;
+    
+}
+.section3{
+    width: 70%;
+}
+.ed-sec{
+    color:rgb(145, 159, 154) ;
+    text-align: left;
+}
+table{
+    width: 60%;
+}
+th,td{
+    text-align: center;
+}
+.heading-color{
+    color: #8360c3;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.section4{
+    width: 70%;
+    height: 20%;
+    
+    justify-content: center;
+}
+ul{
+    position: relative;
+    left:40px;
+}
+.section5{
+    width: 70%;
+    justify-content: left;
+}
+mark{
+background-color: #8360c3;
+}
+li{
+    list-style: square;
+    margin: 2px;
+}
+.section6{
+    width: 70%;
+    height: 12rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #8586e0;
+}
+
+
