@@ -53,6 +53,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         
     }
     img{
+    
         border-radius: 50%;
     }
     .profile-data{
@@ -107,6 +108,7 @@ td{
     /* display:flex; */
     flex-direction: row;
     justify-content: center;
+    z-index: -1;
 }
 ul{
     position: relative;
@@ -212,4 +214,12 @@ button{
                         color-stop(.5, rgba(255, 255, 255, .2)),
                         color-stop(.5, transparent), to(transparent));
  }
+ .section7{
+    width: 70%;
+    height: 20%;
+    /* display:flex; */
+    flex-direction: row;
+    justify-content: center;
+ }
  
+
