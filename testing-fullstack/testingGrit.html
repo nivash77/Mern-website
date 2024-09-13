@@ -6,10 +6,19 @@
     <title>GRID</title>
     <link rel="stylesheet" href="style1.css">
     <script>
-        function myfunction(){
-        var s=document.getElementById("name").value;
-        alert(s);
-        }
+        function myfunction(e) {
+        e.preventDefault();  // Prevent the form from reloading
+        var name = document.getElementById("name").value;
+        let mail = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+
+        let userlist = {
+            username: name,
+            mailid: mail,
+            password: pass
+        };
+        console.log(userlist);  
+    }
     </script>
     <style>
         @keyframes myanime{
@@ -52,11 +61,11 @@
 </head>
 <body>
     <div class="contain">
-        <form class="form-tag">
-            <input type="text" placeholder="name"  id="name">
+        <form class="form-tag" onsubmit="myfunction(event)">  <!-- Pass event object correctly -->
+            <input type="text" placeholder="name" id="name">
             <input type="email" placeholder="email" id="email">
-            <input type="password" placeholder="Password"id="password">
-            <button type="submit" onclick="myfunction()">SUBMIT</button>
+            <input type="password" placeholder="Password" id="password">
+            <button type="submit">SUBMIT</button>
         </form>
     </div>
 </body>
