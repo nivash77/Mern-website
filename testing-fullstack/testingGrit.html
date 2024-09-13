@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function myfunction(){
+        var s=document.getElementById("name").value;
+        alert(s);
+        }
+    </script>
+    <style>
+        @keyframes myanime{
+            from{
+                transform: translate(-100%);
+                scale: 20%;
+            }
+            to{
+                transform: translate(0%);
+                scale: 100%;
+            }
+        }
+        .red{
+          background-color: red;
+          animation: 2s myanime ease-in;
+        }
+        .blue{
+            background-color: blue;
+            grid-column: 2/3;
+            grid-row: -3/-2;
+           
+        }
+        .blue:hover{
+            background-color:orange;
+            transition: 2s background-color ease-in;
+        }
+        .green{
+            background-color: green;
+            grid-column: 3/3;
+            grid-row: -1/-2;
+        }
+        .contain{
+            display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <form class="form-tag">
+            <input type="text" placeholder="name"  id="name">
+            <input type="email" placeholder="email" id="email">
+            <input type="password" placeholder="Password"id="password">
+            <button type="submit" onclick="myfunction()">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
