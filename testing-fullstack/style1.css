@@ -9,13 +9,50 @@ body{
     background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+@keyframes myanime{
+    from{
+        transform: translate(-100%);
+        scale: 20%;
+    }
+    to{
+        transform: translate(0%);
+        scale: 100%;
+    }
+}
+.red{
+  background-color: red;
+  animation: 2s myanime ease-in;
+}
+.blue{
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: -3/-2;
+   
+}
+.blue:hover{
+    background-color:orange;
+    transition: 2s background-color ease-in;
+}
+.green{
+    background-color: green;
+    grid-column: 3/3;
+    grid-row: -1/-2;
+}
+.contain{
+    display: flex;
+justify-content: center;
+align-content: space-around;
+flex-direction: column;
+   
+}
+
  .form-tag{
     display: flex;
     flex-direction: column;
     gap: 3rem;
     border-radius: 5px;
-    height: 300px;
-    width: 250px;
+    height: 350px;
+    width: 300px;
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.5px );
@@ -26,7 +63,7 @@ body{
     align-items: center;
  }
 .submit{
-    background-color: rgb(152, 196, 181);
+    background-color: rgb(140, 132, 200);
 }
 button{
     width: 100px;
@@ -34,13 +71,18 @@ button{
     border-radius: 5px;
 }
 button:hover{
-    background-color: rgb(145, 183, 170);
-    transition: 1s background-color ease-in;
+    background-color: rgb(142, 142, 202);
+    transition: 1ms background-color ease-in;
 }
 input{
     width: 200px;
-    border: 2px solid;
+    height: 20px;
+    border: 2px solid rgb(232, 223, 223);
     border-radius:5px;
+}
+input:hover{
+    background-color: rgb(202, 205, 207);
+    text-decoration-color: #8f94fb;
 }
 /* .name{
     align-items: center;
@@ -51,3 +93,4 @@ input{
 .email{
 
 } */
+
