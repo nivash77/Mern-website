@@ -54,4 +54,5 @@ else{
     exec(data,error)
 }
 }
-trigger(3)
+let d=3
+trigger(d)
