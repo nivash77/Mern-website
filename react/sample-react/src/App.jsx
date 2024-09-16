@@ -1,21 +1,26 @@
-export default function App() {
-  return (
-    <>
-    <div className="h-screen w-screen flex justify-center items-center bg-purple-600">
-      <div className="h-3/6 w-[20rem]  bg-purple-400  rounded-md flex flex-col justify-center items-center gap-4">
-      <input
-        type="text"
-        placeholder="NAME"
-        className="hover:border-b-4 hover:border-b-purple-500 rounded-sm "
-      />
-      <input type="number" placeholder="AGE" className="hover:border-b-4 hover:border-b-purple-500 rounded-sm  p"/>
-      <input type="email" placeholder="Email" className="hover:border-b-4  hover:border-b-purple-500 rounded-sm "/>
-      <input type="password" placeholder="Password" className="hover:border-b-4  hover:border-b-purple-500 rounded-sm "/>
-       <button class="bg-purple-300 text-white p-2 rounded-md hover:bg-purple-600 animation-myanime"> 
-  Submit
-</button>
-      </div>
-    </div>
-    </>
-  )
+// import React from 'react'
+
+import Login from "./components/login"
+import Navbar from "./components/login"
+
+const App=()=>{
+  const nav="Sign-Up"
+    return (
+        <>
+        <div className="h-screen w-screen flex  flex-col justify-center items-center bg-zinc-300">
+         
+          <div className="h-4/6 w-2/6  bg-gray-500  rounded-md flex flex-col justify-center items-center gap-4">
+          <Login login={nav} />
+         
+          <input type="text" placeholder="NAME"  required className="h-8 w-3/6  hover:border-b-4 hover:border-b-gray-700 rounded-sm"/>
+          <input type="number" placeholder="AGE" className="h-8 w-3/6 hover:border-b-4 hover:border-b-gray-700 rounded-sm"/>
+          <input type="email" placeholder="Email" className="h-8 w-3/6 hover:border-b-4  hover:border-b-gray-700 rounded-sm "/>
+          <input type="password" placeholder="Password" className="h-8 w-3/6 hover:border-b-4  hover:border-b-gray-700 rounded-sm "/>
+           <button className= " w-1/5 block bg-gray-700  text-white p-2 rounded-md hover:bg-gray-600" >Sign-up </button>
+          </div>
+        </div>
+        </>
+      )
+    
 }
+export default App
