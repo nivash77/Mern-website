@@ -18,3 +18,17 @@ async function APIDATA() {
     
 }
 APIDATA()
+//add promise
+function pro(){
+    return new Promise((reslove,reject)=>{
+        const x=false
+        setTimeout(()=>{
+            if(x){
+                reslove("Success")
+            }
+            else{
+                reject("error")
+            }
+        },3000)
+    })
+}
